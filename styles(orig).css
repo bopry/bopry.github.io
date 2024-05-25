@@ -64,7 +64,7 @@ body {
     background-position: center;
     transition: filter 0.5s ease, background-image 0.5s ease;
     background-attachment: fixed;
-    position: inherit;
+    position: static;
 }
 
 #google {
