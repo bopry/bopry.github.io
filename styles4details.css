@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('sf_ui_display_bold.woff2') format('woff2'),
+         url('sf_ui_display_bold.woff') format('woff');
+}
+
+@keyframes highlightText {
+    0% { color: #eee9ff; }
+    60% { color: #93d; }
+    70% { color: #eee9ff; }
+    100% { color: #000; }
+}
+
+@keyframes H2 {
+    0% { color: rgba(255, 255, 255, 0.001); }
+    80% { color: rgba(255, 255, 255, 0.001); }
+    100% { color: rgba(0, 0, 0, 1); }
+}
+
+@keyframes P {
+    0% { color: rgba(255, 255, 255, 0.001); }
+    85% { color: rgba(255, 255, 255, 0.001); }
+    100% { color: rgba(0, 0, 0, 1); }
+}
+
+@keyframes Button {
+    0% { color: rgba(255, 255, 255, 0.001);
+    background-color: rgba(255, 255, 255, 0.001);}
+    85% { color: rgba(255, 255, 255, 0.001);
+    background-color: rgba(255, 255, 255, 0.001);}
+    99% { color: #caf;
+    background-color: #000}
+    100% { color: relative;
+    background-color: relative;}
+}
+
+@keyframes Nav {
+    0% { color: rgba(255, 255, 255, 0.001);
+    background-color: rgba(255, 255, 255, 0.001);}
+    85% { color: rgba(255, 255, 255, 0.001);
+    background-color: rgba(255, 255, 255, 0.001);}
+    100% { color: relative;
+    background-color: relative;}
+}
+
+@keyframes Border {
+    0% { border-color: rgba(255, 255, 255, 0.001);
+    background-image: none;}
+    85% { border-color: rgba(255, 255, 255, 0.001);
+    background-image: none;}
+    100% { border-color: relative;
+    background-image: relative;}
+}
+
+body {
+    font-family: 'SF UI Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#ddddff, #aaaad9);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.5s ease, background-image 0.5s ease;
+    background-attachment: fixed;
+    position: inherit;
+}
+
+nav {
+    top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: none;
+    position: relative;
+    background-color: none;
+    border-radius: 15px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #306;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    border-radius: 10rem;
+    background-image: linear-gradient(to left, #cfa9ff, #bbbbff);
+}
+
+#main {
+  animation: Nav 0.7s ease forwards;
+}
+
+#about {
+  animation: Nav 0.9s ease forwards;
+}
+
+#contacts {
+  animation: Nav 1.2s ease forwards;
+}
+
+nav a:hover {
+    background-color: #000;
+    color:#caf;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+p {
+    color: #000;
+    animation: Nav 1.5s ease forwards;
+}
+
+
+h3 {
+    color: #000;
+}
+
+h2 {
+    color: #000;
+    animation: Nav 1.5s ease forwards;
+}
