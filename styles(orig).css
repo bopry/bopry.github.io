@@ -65,7 +65,8 @@ body {
     transition: filter 0.5s ease, background-image 0.5s ease;
     background-attachment: fixed;
     position: inherit;
-    width: auto;
+    width: 100%;
+    height: 100%;
 }
 
 #google {
