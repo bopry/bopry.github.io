@@ -44,7 +44,7 @@
 
 @keyframes NavDropSize {
   0% { height: 0px;}
-  100% { height: 284px;}
+  100% { height: 350px;}
 }
 
 @keyframes NavDropA {
