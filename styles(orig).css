@@ -281,11 +281,6 @@ main {
     background-color: rgba(120, 50, 178, 1);
 }
 
-.section:hover {
-  border-radius: 50px;
-  border: 2px solid #b0f;
-}
-
 .section {
     background-image: linear-gradient(to right bottom, #fff, #c1b3f5);
     cursor: move;
@@ -294,7 +289,7 @@ main {
     border-radius: 30px;
     border: 2px solid #85b;
     transition: 0.2s;
-    animation: fadeInBorder 1.5s ease forwards;
+    height: 86px;
 }
 
 .section h3, .section p, .section h2, p, h3, h2 {
@@ -351,12 +346,18 @@ main {
     z-index: -3;
 }
 
-#atestat9, #atestat11 {
-  position: absolute;
-  top: 34px;
-  width: 100%;
-  height: auto;
-  filter: hue-rotate(30deg);
+#atestat9_1, #atestat9_2, #atestat9_3, #atestat9_4, #atestat11_1, #atestat11_2, #atestat11_3, #atestat11_4{
+    top: -120px;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px #439;
+}
+
+#atestat9_1, #atestat9_2, #atestat11_1, #atestat11_2{
+    border-radius: 18px;
 }
 
 #moon {
@@ -383,4 +384,31 @@ main {
 
 #sun:hover {
   filter: brightness(0) saturate(100%) invert(35%) sepia(15%) saturate(4203%) hue-rotate(236deg) brightness(90%) contrast(95%);
+}
+
+#nagor {
+ position: relative;
+ margin-right: 0px;
+ background-color: #caf;
+ border: solid 8px #caf;
+ border-radius: 15px;
+ text-decoration-line: none;
+ color: #000;
+ box-shadow: 0px 0px 10px #fff;
+}
+
+#nagor:hover {
+ background-color: #000;
+ border: solid 8px #000;
+ color: #caf;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #p1, #p2, #p3, #p4 {
+  top: -120px;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px #439;
 }

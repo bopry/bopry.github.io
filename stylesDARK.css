@@ -89,7 +89,7 @@ header {
     width: 100%;
     backdrop-filter: blur(12px);
     z-index: 4;
-    background-color: rgba(100, 0, 255, 0.2);
+    background-color: rgba(22, 0, 55, 0.8);
 }
 
 #navdrop {
@@ -102,7 +102,7 @@ header {
     backdrop-filter: blur(12px);
     z-index: 4;
     animation: ease forwards;
-    background-image: linear-gradient(to bottom, rgba(100, 0, 255, 0.2),rgba(100, 0, 255, 0.5));
+    background-image: linear-gradient(to bottom, rgba(22, 0, 55, 0.8),rgba(0, 0, 0, 0.8));
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -265,11 +265,6 @@ main {
     background-color: rgba(120, 50, 178, 1);
 }
 
-.section:hover {
-  border-radius: 50px;
-  border: 2px solid #87f;
-}
-
 .section {
     background-image: linear-gradient(to right bottom, #000, #302560);
     cursor: move;
@@ -278,7 +273,7 @@ main {
     border-radius: 30px;
     border: 2px solid #65b;
     transition: 0.2s;
-    animation: fadeInBorder 1.5s ease forwards;
+    height: 86px;
 }
 
 .section h3, .section p, .section h2, p, h3, h2 {
@@ -335,12 +330,15 @@ main {
     z-index: -3;
 }
 
-#atestat9, #atestat11 {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 34px;
-  filter: invert(100%) hue-rotate(210deg);
+#atestat9_1, #atestat9_2, #atestat11_1, #atestat11_2{
+    top: -120px;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: auto;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px #439;
+    border-radius: 18px;
 }
 
 #moon {
@@ -369,4 +367,30 @@ main {
 
 #sun:hover {
   filter: brightness(0) saturate(100%) invert(35%) sepia(15%) saturate(4203%) hue-rotate(236deg) brightness(90%) contrast(95%);
+}
+
+#nagor {
+ position: relative;
+ margin-right: 0px;
+ border-radius: 15px;
+ text-decoration-line: none;
+ background-color: #326;
+ border: solid 8px #326;
+ color: #caf;
+}
+
+#nagor:hover {
+  background-color: #caf;
+  border: solid 8px #caf;
+  color: #000;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #p1, #p2, #p3, #p4 {
+  top: -120px;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  height: auto;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px #439;
 }
