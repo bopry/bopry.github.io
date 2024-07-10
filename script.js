@@ -1,6 +1,3 @@
-Telegram.WebApp.ready();
-        Telegram.WebApp.expand(); /
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const menu = document.getElementById('menu');
   const navDrop = document.getElementById('navdrop');
