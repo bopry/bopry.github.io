@@ -15,6 +15,11 @@
     100% { color: rgba(0, 0, 0, 1); }
 }
 
+@keyframes fadeIn2 {
+    0%, 80%, 85% { color: rgba(255, 255, 255, 0.001); }
+    100% { color: #8c00ff; }
+}
+
 @keyframes fadeInBorder {
     0%, 85% { border-color: rgba(255, 255, 255, 0.001); background-image: none; }
     100% { border-color: relative; background-image: relative; }
@@ -415,5 +420,5 @@ main {
 
 #menutxt {
     color: #8c00ff;
-    animation: fadeIn 1.5s ease forwards;
+    animation: fadeIn2 1.5s ease forwards;
 }
