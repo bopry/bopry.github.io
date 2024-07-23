@@ -415,4 +415,5 @@ main {
 
 #menutxt {
     color: #8c00ff;
+    animation: fadeIn 1.5s ease forwards;
 }
