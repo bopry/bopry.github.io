@@ -422,3 +422,8 @@ main {
     color: #8c00ff;
     animation: fadeIn2 1.5s ease forwards;
 }
+
+#mail {
+    color: #8c00ff;
+    text-decoration: none;
+}
