@@ -411,3 +411,8 @@ main {
     color: #ffffff;
     animation: fadeIn2 1.5s ease forwards;
 }
+
+#mail {
+    color: #ffffff;
+    text-decoration: none;
+}
