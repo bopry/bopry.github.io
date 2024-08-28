@@ -1,19 +1,20 @@
 function loaded() {
       document.querySelector("#loading").style.display = 'none';
+      document.querySelector("#loading-box").style.display = 'none';
       }
 
-var navDrop = document.querySelector('#navdrop');
+var navDrop = document.querySelector('#navdrop').style;
 var menu = document.querySelector('#menu');
 
 function Open() {
-  if (navDrop.style.transform == 'rotateX(0deg)'){
-  navDrop.style.transform = 'rotateX(90deg)';
-  navDrop.style.opacity = '0.3';
-  navDrop.style.transition = ' .3s';
+  if (navDrop.transform == 'rotateX(0deg)'){
+  navDrop.transform = 'rotateX(90deg)';
+  navDrop.opacity = '0.3';
+  navDrop.transition = ' .3s';
   } else {
-  navDrop.style.transform = 'rotateX(0deg)';
-  navDrop.style.opacity = '1';
-  navDrop.style.transition = ' .3s';
+  navDrop.transform = 'rotateX(0deg)';
+  navDrop.opacity = '1';
+  navDrop.transition = ' .3s';
   }
 }
 

@@ -426,15 +426,33 @@ main {
   animation: Text 1.5s infinite linear;
 }
 
+#loading-box {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #f4e6ff;
+}
+
 #loading {
-          position: fixed;
-          z-index: 999;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to left, #EFDBFF, #EFDBFF, #EFDBFF, #EFDBFF, #FFFFFF, #EFDBFF, #EFDBFF, #EFDBFF, #EFDBFF);
-          background-size: 300%;
-          background-position: left;
-          animation: LoadingBody 2s infinite;
+        position: relative;
+        z-index: 999;
+        width: 70px;
+        height: 70px;
+        background-image: conic-gradient(#f4e6ff,#bae 90%);
+        margin: calc(50vh - 100px) calc(50vh + 30px) calc(50vw - 35px) calc(50vw - 35px);
+        border-radius: 50%;
+        animation: Loading 1s infinite linear;
+}
+
+#loading2 {
+  position: absolute;
+  content: '';
+  width: 55px;
+  height: 55px;
+  background-color: #f4e6ff;
+  margin: 7.5px;
+  border-radius: 50%;
 }
 
 @keyframes Text {
@@ -446,9 +464,9 @@ main {
   100% {background-position: right;}
 }
 
-@keyframes LoadingBody {
-    0% {background-position: left;}
-    100% {background-position: right;}
+@keyframes Loading {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 }
@@ -867,17 +885,35 @@ main {
   h2, p {
     text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
   }
-  
+
+  #loading-box {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: #16101d;
+  }
+
   #loading {
-          position: fixed;
+          position: relative;
           z-index: 999;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to left, #000, #000, #000, #000, #325, #000, #000, #000, #000);
-          background-size: 300%;
-          background-position: left;
-          animation: LoadingBody 2s infinite;
-}
+          width: 70px;
+          height: 70px;
+          background-image: conic-gradient(#16101d,#594f99 90%);
+          margin: calc(50vh - 100px) calc(50vh + 30px) calc(50vw - 35px) calc(50vw - 35px);
+          border-radius: 50%;
+          animation: Loading 1s infinite linear;
+  }
+
+  #loading2 {
+    position: absolute;
+    content: '';
+    width: 55px;
+    height: 55px;
+    background-color: #16101d;
+    margin: 7.5px;
+    border-radius: 50%;
+  }
 
   @keyframes Text {
     0% {background-position: left;}
@@ -887,10 +923,10 @@ main {
     50% {text-shadow: 0 0 10px rgba(125,0,255,0.001);}
     100% {background-position: right;}
   }
-  
-  @keyframes LoadingBody {
-    0% {background-position: left;}
-    100% {background-position: right;}
+
+  @keyframes Loading {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
 
 
